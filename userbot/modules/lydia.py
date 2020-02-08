@@ -1,6 +1,16 @@
+# Copyright (C) 2019 The Raphielscape Company LLC.
+#
+# Licensed under the Raphielscape Public License, Version 1.c (the "License");
+# you may not use this file except in compliance with the License.
+# credit goes to @snapdragon and @devpatel_73 for making it work on this userbot.
+#
+"""
+Userbot module to help you manage a group
+"""
+
 import coffeehouse
 import asyncio
-from userbot import LYDIA_API_KEY
+from userbot import LYDIA_API_KEY, CMD_HELP
 from userbot.events import register
 from telethon import events
 
@@ -77,12 +87,13 @@ async def user(event):
         return
 
     
-"""CMD_HELP.update({
-    "Lydia":
+CMD_HELP.update({
+    "lydia":
     ".addcf <username/reply>\
 \nUsage: add's lydia auto chat request in the chat.\
 \n\n.remcf <username/reply>\
 \nUsage: remove's lydia auto chat request in the chat.\
 \n\n.repcf <username/reply>\
 \nUsage: starts lydia repling to perticular person in the chat."
-})"""
+})
+

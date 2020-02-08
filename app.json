@@ -27,7 +27,7 @@
       "required": true
     },
     "HEROKU_MEMEZ": {
-      "description": "This should be True if the userbor is running on a Heroku Dyno.",
+      "description": "This should be True if the userbot is running on a Heroku Dyno.",
       "value": "True",
       "required": true
     },
@@ -39,6 +39,10 @@
       "description": "Add the Heroku app name here. It helps with userbot updates.",
       "required": false
     },
+    "UPSTREAM_REPO_URL": {
+      "description": "In case you maintain a fork, add your repo URL here.",
+      "required": false
+    },
     "COUNTRY": {
       "description": "Set your Country to be used in the .time and .date commands.",
       "required": false
@@ -48,6 +52,11 @@
       "value": "1",
       "required": false
     },
+    "TELEGRAPH_SHORT_NAME": {
+      "description": "Fill the value up to you.",
+      "value": "Userbot",
+      "required": true
+     },
     "CHROME_DRIVER": {
       "description": "ChromeDriver location for selenium based modules.",
       "value": "/usr/bin/chromedriver",
@@ -164,7 +173,7 @@
     {
       "plan": "heroku-postgresql",
       "options": {
-        "version": "9.5"
+        "version": "9.9.9"
       }
     }
   ]

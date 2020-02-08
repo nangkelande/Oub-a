@@ -72,7 +72,7 @@ async def bot_ver(event):
                          "`")
     else:
         await event.edit(
-            "Shame that you don't have git, You're running 5.0 - 'Extended' anyway"
+            "Shame that you don't have git, You're running 9.0 - 'Extended' anyway"
         )
 
 
@@ -119,18 +119,20 @@ async def pipcheck(pip):
         await pip.edit("`Use .help pip to see an example`")
 
 
-@register(outgoing=True, pattern="^.on$")
+
+@register(outgoing=True, pattern="^.live$")
 async def amireallyalive(on):
-    """ For .on command, check if the bot is running.  """
+    """ For .live command, check if the bot is running.  """
     await on.edit("`"
-                     "i am ON broh \n\n"
-                     "and mybot is ON \n\n"
+
+                     "My Bot Is running \n\n"
+                     "=================== \n"
                      f"Telethon version: {version.__version__} \n"
                      f"Python: {python_version()} \n"
-                     f"-------------------- \n"
-                     f"User: {DEFAULTUSER} \n"
-                     f"jangan lupa coly "
-                     "`")    
+                     f"========== \n"
+                     f"User: {DEFAULTUSER}"
+
+                                         "`")
 
 
 
